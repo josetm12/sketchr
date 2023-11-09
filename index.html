@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sketchr</title>
+    <link rel="icon" type="image/png" href="./assets/icons/favicon.png" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <span class="game-heading">SKETCH-R</span>
+      <div class="screen">
+        <div id="screen-grid"></div>
+        <p><span id="grid-size-label">16 x 16</span></p>
+      </div>
+      <div class="controls-ct">
+        <div class="grid-size-slide-ct">
+          <input
+            type="range"
+            min="1"
+            max="64"
+            value="16"
+            class="slider"
+            id="grid-size-slider" />
+          <div data-tool="clear" class="tool clear" id="clear-btn">
+            <img
+              style="height: 100%; width: 100%"
+              src="./assets/icons/trash.svg"
+              alt="Brush"
+              srcset="" />
+          </div>
+        </div>
+        <div class="tools-ct">
+          <div id="tool-select">
+            <div data-tool="brush" class="tool brush active">
+              <img
+                style="height: 100%; width: 100%"
+                src="./assets/icons/brush.svg"
+                alt="Brush"
+                srcset="" />
+            </div>
+            <div data-tool="eraser" class="tool eraser">
+              <img
+                style="height: 100%; width: 100%"
+                src="./assets/icons/eraser.svg"
+                alt="Eraser"
+                srcset="" />
+            </div>
+            <div data-tool="shader" class="tool shader">
+              <img
+                style="height: 100%; width: 100%"
+                src="./assets/icons/shader.svg"
+                alt="Shader"
+                srcset="" />
+            </div>
+            <div data-tool="rainbow" class="tool rainbow">
+              <img
+                style="height: 100%; width: 100%"
+                src="./assets/icons/rainbow-quart.svg"
+                alt="Rainbow"
+                srcset="" />
+            </div>
+          </div>
+          <div id="color-picker">Loading...</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span class="author-name">Jose T Mundackal</span>
+      <div class="footer-icon">
+        <img
+          style="height: 100%; width: 100%"
+          src="./assets/icons/github-alt.svg"
+          alt="Rainbow"
+          srcset="" />
+      </div>
+      <div class="footer-icon">
+        <img
+          style="height: 100%; width: 100%"
+          src="./assets/icons/linkedin.svg"
+          alt="Rainbow"
+          srcset="" />
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
